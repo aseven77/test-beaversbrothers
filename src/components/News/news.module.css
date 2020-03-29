@@ -1,4 +1,4 @@
-.soon {
+.item {
     max-width: 228px;
     width: 100%;
     margin-right: 20px;
@@ -9,7 +9,7 @@
 
 }
 :global(.active) {
-    &:local(.soon) {
+    &:local(.item) {
         .preview {
             &::after {
                 content: '';

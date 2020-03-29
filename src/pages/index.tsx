@@ -3,9 +3,9 @@ import React, { Component } from "react"
 import { Layout } from "~/components/Layout/Layout"
 import { ContainerList } from "~/components/ContainerList/ContainerList"
 import Place from "~/components/Place/Place"
-import Soon from "~/components/Soon/Soon"
+import News from "~/components/News/News"
 import objects from "~/json/objects"
-import soon from "~/json/soon"
+import newslist from "~/json/soon"
 export default class extends Component {
 
   render() {
@@ -32,9 +32,9 @@ export default class extends Component {
         }
       }
     })
-    soons = soon.map((item,index) => {
+    soons = newslist.map((item,index) => {
       return (
-        <Soon key={index} img={item.img} title={item.title} desc={item.desc}  active={item.active}/>
+        <News key={index} img={item.img} title={item.title} desc={item.desc}  active={item.active}/>
       )
         
     })
