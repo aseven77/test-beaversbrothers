@@ -1,0 +1,33 @@
+.Root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 45px 0;
+  background: snow;
+
+}
+
+.containerFluid {
+  max-width: 768px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.topPlace {
+  display: flex;
+  justify-content: space-around;
+}
+.topPlaceOne {
+  max-width: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 0;
+  img {
+    border-radius: 50%;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+}

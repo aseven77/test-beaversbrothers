@@ -1,0 +1,22 @@
+.List {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0 -15px;
+    padding: 0 15px;
+    width: calc(100% + 30px);
+    
+    & > div {
+      white-space: normal;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

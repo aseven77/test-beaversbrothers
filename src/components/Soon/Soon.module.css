@@ -1,0 +1,44 @@
+.soon {
+    max-width: 228px;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }    
+
+}
+:global(.active) {
+    &:local(.soon) {
+        .preview {
+            &::after {
+                content: '';
+                width: 40px;
+                height: 40px;
+                background-image: url(../../img/soon-active.svg);
+                position: absolute;
+                right: -10px;
+                top: -8px;
+            }
+        }
+    }   
+}
+.preview {
+    max-width: 100%;
+    height: 170px;
+    margin-bottom: 15px;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.info {
+    color: #7A7A7A;
+    font-size: 18px;
+    strong {
+        color: #000000;
+    }
+}
